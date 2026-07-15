@@ -124,7 +124,7 @@ export default function Header({
           {/* Book a Table Primary CTA */}
           <button 
             onClick={() => navigateTo('book')}
-            className="hidden sm:inline-flex bg-primary-container text-on-primary-container hover:bg-primary-container/90 px-5 py-2.5 rounded-lg font-sans text-xs font-semibold tracking-widest uppercase transition-all duration-200 active:scale-[0.97] cursor-pointer shadow-lg"
+            className="hidden sm:inline-flex bg-primary-container text-on-primary-container hover:bg-primary-container/90 px-5 py-2.5 rounded-lg font-sans text-xs font-semibold tracking-widest uppercase transition-all cursor-pointer"
             id="header-cta-book"
           >
             Book a Table
@@ -223,7 +223,7 @@ export default function Header({
                   placeholder="e.g. Sterling Archer"
                   value={loginName}
                   onChange={(e) => setLoginName(e.target.value)}
-                  className="w-full bg-surface-container-high border border-white/10 rounded-lg p-3 text-sm text-on-surface focus:border-primary focus:ring-0 focus:outline-none transition-all placeholder:text-white/20"
+                  className="w-full bg-surface-container-high border border-white/10 rounded-lg p-3 text-sm text-on-surface focus:border-primary focus:ring-0 focus:outline-none transition-all placeholder:text-on-surface-variant/50"
                   id="auth-input-name"
                 />
               </div>
@@ -235,13 +235,13 @@ export default function Header({
                   placeholder="e.g. sterling@boulevard.com"
                   value={loginEmail}
                   onChange={(e) => setLoginEmail(e.target.value)}
-                  className="w-full bg-surface-container-high border border-white/10 rounded-lg p-3 text-sm text-on-surface focus:border-primary focus:ring-0 focus:outline-none transition-all placeholder:text-white/20"
+                  className="w-full bg-surface-container-high border border-white/10 rounded-lg p-3 text-sm text-on-surface focus:border-primary focus:ring-0 focus:outline-none transition-all placeholder:text-on-surface-variant/50"
                   id="auth-input-email"
                 />
               </div>
               <button 
                 type="submit"
-                className="w-full bg-primary text-on-primary font-sans text-xs font-semibold py-3.5 rounded-lg uppercase tracking-widest hover:bg-primary-container transition-all cursor-pointer shadow-lg mt-4"
+                className="w-full bg-primary text-on-primary font-sans text-xs font-semibold py-3.5 rounded-lg uppercase tracking-widest hover:bg-primary-container transition-all cursor-pointer shadow-lg"
                 id="auth-submit-btn"
               >
                 Access Account
